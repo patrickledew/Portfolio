@@ -1,0 +1,26 @@
+$bg-primary: #eeedde;
+$bg-secondary: #e0ddaa;
+$text-primary: #141e27;
+$text-secondary: #203239;
+$text-muted: #141e2766;
+
+$nav-primary: #575366ff;
+$nav-secondary: rgb(32, 28, 31);
+$nav-text-primary: rgb(66, 66, 66);
+$nav-text-muted: rgba(212, 197, 166, 100);
+
+.bg-primary {
+  background-color: $bg-primary;
+}
+
+.bg-secondary {
+  background-color: $bg-secondary;
+}
+
+.text-muted {
+  color: $text-muted;
+}
+
+.text-secondary {
+  color: $text-secondary;
+}

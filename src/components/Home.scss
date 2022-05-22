@@ -1,0 +1,26 @@
+@import "../shared/colors.scss";
+
+.home {
+  color: $text-primary;
+  background-color: $bg-primary;
+}
+
+.content {
+  width: 100%;
+}
+
+.hero {
+  padding: 4em;
+  padding-top: 20%;
+}
+
+.section {
+  padding: 4em;
+  color: $text-secondary;
+  background-color: $bg-secondary;
+  transition: padding 0.5s ease-out;
+}
+
+.section:hover {
+  padding-left: 5em;
+}
