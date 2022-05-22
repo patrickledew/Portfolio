@@ -10,17 +10,48 @@
 }
 
 .hero {
-  padding: 4em;
-  padding-top: 20%;
+  padding: 2em;
 }
 
 .section {
-  padding: 4em;
-  color: $text-secondary;
-  background-color: $bg-secondary;
+  display: flex;
+  flex-direction: row;
+  padding: 2em;
+  align-items: center;
+}
+
+.move {
   transition: padding 0.5s ease-out;
 }
 
-.section:hover {
+.intro {
+  padding-top: 20%;
+}
+
+.icons {
+  padding: 2em;
+  color: $text-muted;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+
+  div {
+    flex-grow: 1;
+
+    a {
+      color: inherit;
+    }
+    a:hover {
+      color: $text-secondary;
+    }
+  }
+}
+
+.about {
+  color: $text-secondary;
+  background-color: $bg-secondary;
+}
+
+.section.move:hover {
   padding-left: 5em;
 }
