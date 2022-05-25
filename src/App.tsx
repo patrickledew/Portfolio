@@ -4,7 +4,7 @@ import './App.scss'
 
 
 import SlidingNavbar from './components/SlidingNavbar';
-import Home from './components/Home';
+import Home from './components/Home/Home';
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <SlidingNavbar />
+        {/*<SlidingNavbar />*/}
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>

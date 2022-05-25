@@ -1,0 +1,75 @@
+@import "../../shared/colors.scss";
+
+.home {
+  color: $text-primary;
+  background-color: $bg-primary;
+}
+
+.content {
+  width: 100%;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  padding: 2em;
+  align-items: center;
+}
+.section-content {
+  padding-left: 0;
+  width: 80%;
+}
+
+.move {
+  transition: padding 0.5s ease-out;
+}
+.move {
+  padding-left: 5em;
+}
+
+.intro {
+  padding-left: 2em;
+  padding-top: 10%;
+}
+
+.hero {
+  padding: 2em;
+  max-width: 50%;
+  flex: 1 1 auto;
+}
+
+.icons {
+  padding: 2em;
+  flex: 1 1 auto;
+  color: $text-muted;
+  display: flex;
+  flex-direction: row;
+
+  div {
+    padding: 1em;
+    a {
+      color: inherit;
+    }
+    a:hover {
+      color: $text-secondary;
+    }
+  }
+}
+
+.intro .image {
+  flex: 1 1 auto;
+  height: 400px;
+}
+
+.about {
+  color: $text-secondary;
+  background-color: $bg-secondary;
+}
+
+.interests {
+  background-color: $bg-tertiary;
+}
+
+a {
+  cursor: pointer;
+}
