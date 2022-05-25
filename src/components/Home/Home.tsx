@@ -1,15 +1,14 @@
 import * as React from "react";
 
-import "./Home.scss";
+import "./home.scss";
 
 import JaxImg from "../res/jax.jpg";
 import AboutSection from "./AboutSection";
-import InterestsSection from "./InterestsSection";
+import InterestsSection from "./InterestsSection/InterestsSection";
 
 interface HomeProps {}
 
 const Home: React.FC<HomeProps> = () => {
-  
   return (
     <div className="page home">
       <div className="content">
@@ -17,7 +16,8 @@ const Home: React.FC<HomeProps> = () => {
           <div className="hero">
             <h1>Patrick LeDew</h1>
             <h2 className="text-muted">
-              A computer science student in Jacksonville, Florida interested in programming and web development
+              A computer science student in Jacksonville, Florida interested in
+              programming and web development
             </h2>
           </div>
           <div className="icons">
