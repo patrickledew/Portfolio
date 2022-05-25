@@ -9,7 +9,7 @@ const MusicInterest: React.FC = () => {
     </>
   );
 
-  let [stage, setStage] = React.useState(10);
+  let [stage, setStage] = React.useState(0);
 
   function next() {
     console.log(stage);

@@ -16,14 +16,14 @@
   align-items: center;
 }
 .section-content {
-  padding-left: 0;
+  padding-left: 4em;
   width: 80%;
 }
 
 .move {
   transition: padding 0.5s ease-out;
 }
-.move {
+.move:hover {
   padding-left: 5em;
 }
 
