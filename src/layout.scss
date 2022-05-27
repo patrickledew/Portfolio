@@ -1,9 +1,9 @@
 .page {
+  position: relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 .content {
-  flex-direction: column;
 }
 
 .section {

@@ -1,23 +1,23 @@
-import { useState } from "react";
-import logo from "./res/logo.svg";
 import "./App.scss";
 
-import SlidingNavbar from "./components/SlidingNavbar";
 import Home from "./components/Home/Home";
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
+
 import Portfolio from "./components/Portfolio/Portfolio";
 
 function App() {
+  let location = useLocation();
+
   return (
     <div className="App">
-      <Router>
-        {/*<SlidingNavbar />*/}
-        <Routes>
+      <AnimatePresence exitBeforeEnter>
+        <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} />
           <Route path="/portfolio" element={<Portfolio />} />
         </Routes>
-      </Router>
+      </AnimatePresence>
     </div>
   );
 }

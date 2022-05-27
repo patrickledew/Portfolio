@@ -5,10 +5,13 @@
   .hero {
     padding: 2em;
     flex: 0 0 40%;
+    width: 40%;
+    align-self: start;
   }
 
   .navigation {
-    flex: 0 0 auto;
+    flex: 0 0 20%;
+    align-self: start;
   }
 
   @media (max-width: 80em) {
@@ -17,6 +20,7 @@
     .hero {
       padding: 2em;
       flex: 0 0 80%;
+      width: 80%;
       text-align: center;
     }
 

@@ -19,7 +19,7 @@ const AboutSection: React.FC = () => {
     <div className="section about">
       <div className="section-content move ">
         <h1>About Me</h1>
-        <p>{text}</p>
+        <p>Ayooooo how ya doing its ya boi</p>
       </div>
     </div>
   );
