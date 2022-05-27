@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import "./home.scss";
+import "./Home.scss";
 
 import { motion } from "framer-motion";
 
