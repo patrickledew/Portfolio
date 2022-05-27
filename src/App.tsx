@@ -6,6 +6,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 
 import Portfolio from "./components/Portfolio/Portfolio";
+import Resume from "./components/Resume/Resume";
 
 function App() {
   let location = useLocation();
@@ -16,6 +17,7 @@ function App() {
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/resume" element={<Resume />} />
         </Routes>
       </AnimatePresence>
     </div>

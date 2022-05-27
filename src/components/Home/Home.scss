@@ -1,15 +1,14 @@
 @import "../../shared/colors.scss";
 
 .home {
-  color: $text-primary;
-  background-color: $bg-primary;
-}
+  h1 {
+    color: $text-primary;
+  }
 
-.move {
-  transition: padding 0.5s ease-out;
-}
-.move:hover {
-  padding-left: 5em;
+  p {
+    color: rgba($text-primary, 70%);
+  }
+  background-color: transparent;
 }
 
 .about {
@@ -18,5 +17,6 @@
 }
 
 .interests {
+  color: $text-tertiary;
   background-color: $bg-tertiary;
 }

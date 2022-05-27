@@ -11,10 +11,10 @@
   flex-direction: row;
 
   a {
-    color: $nav-primary;
+    color: $nav-secondary;
   }
   a:hover {
-    color: $nav-secondary;
+    color: $nav-primary;
   }
 
   > div {
@@ -45,23 +45,10 @@ hr {
       position: relative;
       font-size: 3em;
       font-weight: 800;
-      color: lighten($nav-secondary, 20%);
+      color: $nav-primary;
     }
     a:hover {
-      color: lighten($nav-secondary, 10%);
-    }
-
-    .animated-link::before {
-      transition: 300ms;
-      height: 2px;
-      content: "";
-      position: absolute;
-      background-color: rgba($nav-primary, 20%);
-      width: 0%;
-      bottom: 0px;
-    }
-    .animated-link:hover::before {
-      width: 100%;
+      color: lighten($nav-primary, 10%);
     }
 
     @media (max-width: 80em) {

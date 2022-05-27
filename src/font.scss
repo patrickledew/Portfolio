@@ -17,6 +17,10 @@ h3 {
 }
 
 h4 {
+  font-size: 1.4em;
+}
+
+p {
   font-size: 1.2em;
 }
 
@@ -35,7 +39,7 @@ a:hover {
   height: 2px;
   content: "";
   position: absolute;
-  background-color: rgba($nav-primary, 20%);
+  background-color: rgba($text-muted, 20%);
   width: 0%;
   bottom: 0px;
 }

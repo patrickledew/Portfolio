@@ -1,0 +1,16 @@
+@import "../../shared/colors.scss";
+
+.resume {
+  color: $text-primary;
+  background-color: transparent;
+}
+
+.section.pdf-display {
+  padding: 0 !important;
+  color: $text-secondary;
+  background-color: $bg-secondary;
+
+  .pdf canvas {
+    width: 100% !important;
+  }
+}
