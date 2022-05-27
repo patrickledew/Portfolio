@@ -1,0 +1,86 @@
+@import "../../shared/colors.scss";
+
+.navigation {
+  padding: 2em;
+}
+.icons {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  color: $nav-primary;
+  display: flex;
+  flex-direction: row;
+
+  a {
+    color: $nav-primary;
+  }
+  a:hover {
+    color: $nav-secondary;
+  }
+
+  > div {
+    padding: 0em;
+    margin-right: 2em;
+    justify-self: center;
+  }
+}
+
+hr {
+  opacity: 20%;
+  width: 100%;
+  margin: 0;
+}
+
+.navigation-links {
+  ul {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    padding: 0;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    li {
+      margin-right: 1.5em;
+    }
+    a {
+      position: relative;
+      font-size: 3em;
+      font-weight: 800;
+      color: lighten($nav-secondary, 20%);
+    }
+    a:hover {
+      color: lighten($nav-secondary, 10%);
+    }
+
+    a::before {
+      transition: 300ms;
+      height: 2px;
+      content: "";
+      position: absolute;
+      background-color: rgba($nav-primary, 20%);
+      width: 0%;
+      bottom: 0px;
+    }
+    a:hover::before {
+      width: 100%;
+    }
+
+    @media (max-width: 80em) {
+      justify-content: center;
+      text-align: center;
+
+      li {
+        margin-left: 1.5em;
+      }
+    }
+  }
+}
+
+@media (max-width: 80em) {
+  .icons {
+    justify-content: center;
+
+    > div {
+      flex: 0 0 auto;
+    }
+  }
+}

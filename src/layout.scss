@@ -1,0 +1,18 @@
+.page {
+  display: flex;
+  flex-direction: row;
+}
+.content {
+  flex-direction: column;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  padding: 2em;
+  align-items: center;
+}
+.section-content {
+  padding-left: 4em;
+  width: 80%;
+}

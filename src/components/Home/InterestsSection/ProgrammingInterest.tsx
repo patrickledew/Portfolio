@@ -373,7 +373,7 @@ const ProgrammingInterest: React.FC = () => {
             <br />
             Making cool things. I'm also looking for an internship or an
             entry-level job where I can <a></a>work on stuff like this. If you
-            like what you see here, we can{" "}
+            <a></a> like what you see here, we can{" "}
             <a href="mailto:patrickledew@gmail.com?subject=Hey, I like your site. Do you want a job?">
               get in touch.
             </a>{" "}
@@ -413,7 +413,7 @@ const ProgrammingInterest: React.FC = () => {
             <br />
             Making cool things. I'm also looking for an internship or an
             entry-level job where I can <a></a>work on stuff like this. If you
-            like what you see here, we can{" "}
+            <a></a> like what you see here, we can{" "}
             <a href="mailto:patrickledew@gmail.com?subject=Hey, I like your site. Do you want a job?">
               get in touch.
             </a>{" "}
@@ -457,7 +457,7 @@ const ProgrammingInterest: React.FC = () => {
             <br />
             Making cool things. I'm also looking for an internship or an
             entry-level job where I can <a></a>work on stuff like this. If you
-            like what you see here, we can{" "}
+            <a></a> like what you see here, we can{" "}
             <a href="mailto:patrickledew@gmail.com?subject=Hey, I like your site. Do you want a job?">
               get in touch.
             </a>{" "}
@@ -501,7 +501,7 @@ const ProgrammingInterest: React.FC = () => {
             <br />
             Making cool things. I'm also looking for an internship or an
             entry-level job where I can <a></a>work on stuff like this. If you
-            like what you see here, we can{" "}
+            <a></a> like what you see here, we can{" "}
             <a href="mailto:patrickledew@gmail.com?subject=Hey, I like your site. Do you want a job?">
               get in touch.
             </a>{" "}
@@ -545,7 +545,7 @@ const ProgrammingInterest: React.FC = () => {
             <br />
             Making cool things. I'm also looking for an internship or an
             entry-level job where I can <a></a>work on stuff like this. If you
-            like what you see here, we can{" "}
+            <a></a> like what you see here, we can{" "}
             <a href="mailto:patrickledew@gmail.com?subject=Hey, I like your site. Do you want a job?">
               get in touch.
             </a>{" "}
@@ -589,7 +589,7 @@ const ProgrammingInterest: React.FC = () => {
             <br />
             Making cool things. I'm also looking for an internship or an
             entry-level job where I can <a></a>work on stuff like this. If you
-            like what you see here, we can{" "}
+            <a></a> like what you see here, we can{" "}
             <a href="mailto:patrickledew@gmail.com?subject=Hey, I like your site. Do you want a job?">
               get in touch.
             </a>{" "}
@@ -633,7 +633,7 @@ const ProgrammingInterest: React.FC = () => {
             <br />
             Making cool things. I'm also looking for an internship or an
             entry-level job where I can <a></a>work on stuff like this. If you
-            like what you see here, we can{" "}
+            <a></a> like what you see here, we can{" "}
             <a href="mailto:patrickledew@gmail.com?subject=Hey, I like your site. Do you want a job?">
               get in touch.
             </a>{" "}
@@ -678,7 +678,7 @@ const ProgrammingInterest: React.FC = () => {
             <br />
             Making cool things. I'm also looking for an internship or an
             entry-level job where I can <a></a>work on stuff like this. If you
-            like what you see here, we can{" "}
+            <a></a> like what you see here, we can{" "}
             <a href="mailto:patrickledew@gmail.com?subject=Hey, I like your site. Do you want a job?">
               get in touch.
             </a>{" "}
@@ -723,7 +723,7 @@ const ProgrammingInterest: React.FC = () => {
             <br />
             Making cool things. I'm also looking for an internship or an
             entry-level job where I can <a></a>work on stuff like this. If you
-            like what you see here, we can{" "}
+            <a></a> like what you see here, we can{" "}
             <a href="mailto:patrickledew@gmail.com?subject=Hey, I like your site. Do you want a job?">
               get in touch.
             </a>{" "}
@@ -768,7 +768,7 @@ const ProgrammingInterest: React.FC = () => {
             <br />
             Making cool things. I'm also looking for an internship or an
             entry-level job where I can <a></a>work on stuff like this. If you
-            like what you see here, we can{" "}
+            <a></a> like what you see here, we can{" "}
             <a href="mailto:patrickledew@gmail.com?subject=Hey, I like your site. Do you want a job?">
               get in touch.
             </a>{" "}
@@ -813,7 +813,7 @@ const ProgrammingInterest: React.FC = () => {
             <br />
             Making cool things. I'm also looking for an internship or an
             entry-level job where I can <a></a>work on stuff like this. If you
-            like what you see here, we can{" "}
+            <a></a> like what you see here, we can{" "}
             <a href="mailto:patrickledew@gmail.com?subject=Hey, I like your site. Do you want a job?">
               get in touch.
             </a>{" "}

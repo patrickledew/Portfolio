@@ -1,0 +1,27 @@
+.section.intro {
+  padding-left: 2em;
+  padding-top: 10%;
+
+  .hero {
+    padding: 2em;
+    flex: 0 0 40%;
+  }
+
+  .navigation {
+    flex: 0 0 auto;
+  }
+
+  @media (max-width: 80em) {
+    flex-wrap: wrap;
+    justify-content: center;
+    .hero {
+      padding: 2em;
+      flex: 0 0 80%;
+      text-align: center;
+    }
+
+    .navigation {
+      flex: 0 0 50%;
+    }
+  }
+}
