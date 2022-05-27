@@ -51,7 +51,7 @@ hr {
       color: lighten($nav-secondary, 10%);
     }
 
-    a::before {
+    .animated-link::before {
       transition: 300ms;
       height: 2px;
       content: "";
@@ -60,7 +60,7 @@ hr {
       width: 0%;
       bottom: 0px;
     }
-    a:hover::before {
+    .animated-link:hover::before {
       width: 100%;
     }
 

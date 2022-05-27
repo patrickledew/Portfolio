@@ -28,13 +28,19 @@ const Navigation: React.FC = () => {
       <div className="navigation-links">
         <ul>
           <li>
-            <NavLink to="/">Home</NavLink>
+            <NavLink className="animated-link" to="/">
+              Home
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/portfolio">Portfolio</NavLink>
+            <NavLink className="animated-link" to="/portfolio">
+              Portfolio
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/resume">Resume</NavLink>
+            <NavLink className="animated-link" to="/resume">
+              Resume
+            </NavLink>
           </li>
         </ul>
       </div>
