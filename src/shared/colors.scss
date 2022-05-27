@@ -1,0 +1,27 @@
+$bg-primary: #052f5c;
+$bg-secondary: #0b70db;
+$bg-tertiary: #35a6fc;
+$text-primary: rgb(255, 255, 255);
+$text-secondary: #f3f3f3ec;
+$text-tertiary: #ffffffc7;
+$text-muted: #ffffff98;
+$link-color: rgb(25, 64, 122);
+
+$nav-primary: rgba(143, 188, 255, 0.904);
+$nav-secondary: $text-muted;
+
+.bg-primary {
+  background-color: $bg-primary;
+}
+
+.bg-secondary {
+  background-color: $bg-secondary;
+}
+
+.text-muted {
+  color: $text-muted;
+}
+
+.text-secondary {
+  color: $text-secondary;
+}

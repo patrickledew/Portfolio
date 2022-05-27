@@ -1,0 +1,31 @@
+.section.intro {
+  padding-left: 2em;
+  padding-top: 10%;
+
+  .hero {
+    padding: 2em;
+    flex: 0 0 40%;
+    width: 40%;
+    align-self: start;
+  }
+
+  .navigation {
+    flex: 0 0 20%;
+    align-self: start;
+  }
+
+  @media (max-width: 80em) {
+    flex-wrap: wrap;
+    justify-content: center;
+    .hero {
+      padding: 2em;
+      flex: 0 0 80%;
+      width: 80%;
+      text-align: center;
+    }
+
+    .navigation {
+      flex: 0 0 50%;
+    }
+  }
+}

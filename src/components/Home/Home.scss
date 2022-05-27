@@ -1,0 +1,22 @@
+@import "../../shared/colors.scss";
+
+.home {
+  h1 {
+    color: $text-primary;
+  }
+
+  p {
+    color: rgba($text-primary, 70%);
+  }
+  background-color: transparent;
+}
+
+.about {
+  color: $text-secondary;
+  background-color: $bg-secondary;
+}
+
+.interests {
+  color: $text-tertiary;
+  background-color: $bg-tertiary;
+}
