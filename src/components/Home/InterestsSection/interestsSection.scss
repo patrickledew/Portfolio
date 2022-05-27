@@ -3,3 +3,10 @@
 a.expand-link {
   text-decoration: underline;
 }
+
+@media (max-width: 1200px) {
+  .section.interests {
+    justify-content: center;
+    //text-align: center;
+  }
+}

@@ -14,7 +14,8 @@
     align-self: start;
   }
 
-  @media (max-width: 80em) {
+  @media (max-width: 1500px) {
+    padding-top: 5%;
     flex-wrap: wrap;
     justify-content: center;
     .hero {

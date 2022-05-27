@@ -51,7 +51,7 @@ hr {
       color: lighten($nav-primary, 10%);
     }
 
-    @media (max-width: 80em) {
+    @media (max-width: 1500px) {
       justify-content: center;
       text-align: center;
 
@@ -59,15 +59,20 @@ hr {
         margin-left: 1.5em;
       }
     }
+    @media (max-width: 540px) {
+      flex-wrap: wrap;
+    }
   }
 }
 
-@media (max-width: 80em) {
+@media (max-width: 1500px) {
   .icons {
     justify-content: center;
 
     > div {
       flex: 0 0 auto;
+      margin-left: 2em;
+      margin-right: 2em;
     }
   }
 }

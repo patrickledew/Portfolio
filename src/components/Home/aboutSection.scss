@@ -1,7 +1,32 @@
+.section.about .section-content {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .about-text {
-  flex: 1 1 auto;
+  flex: 0 0 60%;
+
+  @media (max-width: 540px) {
+    flex: 0 0 80%;
+  }
 }
 
 .selfie {
-  flex: 1 1 auto;
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  img {
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 400px;
+  }
+}
+@media (max-width: 1200px) {
+  .section.about .section-content {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    //text-align: center;
+  }
 }
