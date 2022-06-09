@@ -1,0 +1,15 @@
+.project-info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.project-thumbnail {
+  flex: 1 0 70%;
+
+  img {
+    border: none;
+    width: max-content;
+    height: auto;
+  }
+}

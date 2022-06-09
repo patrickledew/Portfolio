@@ -2,10 +2,19 @@
 
 .portfolio {
   color: $text-primary;
-  background-color: $bg-primary;
 }
 
-.projects {
+.section.projects {
   color: $text-secondary;
   background-color: $bg-secondary;
+  padding-left: 10% !important;
+  padding-right: 10% !important;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: 3;
+  width: 100%;
 }
