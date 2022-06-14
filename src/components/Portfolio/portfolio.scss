@@ -2,10 +2,32 @@
 
 .portfolio {
   color: $text-primary;
-  background-color: $bg-primary;
 }
 
-.projects {
+.section.projects {
   color: $text-secondary;
   background-color: $bg-secondary;
+  padding-left: 10% !important;
+  padding-right: 10% !important;
+  flex-direction: column;
+  align-items: flex-start;
+
+  h1 {
+    margin-bottom: 0;
+  }
+
+  a {
+    color: $link-color-secondary;
+  }
+  a:hover {
+    color: darken($link-color-secondary, 10%);
+  }
+
+  .section-content {
+    padding: 0px 2em !important;
+  }
+}
+
+.project-container {
+  width: 100%;
 }

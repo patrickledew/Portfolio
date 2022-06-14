@@ -1,7 +1,7 @@
 import "./App.scss";
 
 import Home from "./components/Home/Home";
-
+import DotsAndLinesBackground from "./components/DotsAndLinesBackground";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 
@@ -13,6 +13,7 @@ function App() {
 
   return (
     <div className="App">
+      {/* <DotsAndLinesBackground /> */}
       <AnimatePresence exitBeforeEnter>
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} />
