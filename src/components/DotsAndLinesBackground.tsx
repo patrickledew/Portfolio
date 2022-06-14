@@ -58,25 +58,31 @@ const DotsAndLinesBackground: React.FC = () => {
         ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
         ctx.fillStyle = "white";
         ctx.strokeStyle = "lightgray";
+        ctx.beginPath();
+
         points.forEach((p1, i, a) => {
           a[i].x += vels[i].x;
           a[i].y += vels[i].y;
+          // ctx.fillRect(
+          //   (p1.x % ctx.canvas.width) - 1,
+          //   (p1.y % ctx.canvas.height) - 1,
+          //   2,
+          //   2
+          // );
 
-          ctx.fillRect(
-            (p1.x % ctx.canvas.width) - 1,
-            (p1.y % ctx.canvas.height) - 1,
-            2,
-            2
-          );
-          const p2 = getClosePoint(p1, points);
-          if (p2) {
-            ctx.beginPath();
+          if (i < 1) {
             ctx.moveTo(p1.x % ctx.canvas.width, p1.y % ctx.canvas.height);
-            ctx.lineTo(p2.x % ctx.canvas.width, p2.y % ctx.canvas.height);
-            ctx.closePath();
-            ctx.stroke();
+            return;
           }
+
+          const p2 = getClosePoint(p1, points);
+
+          if (dist(points[i - 1], p1) < 500)
+            ctx.lineTo(p1.x % ctx.canvas.width, p1.y % ctx.canvas.height);
+          else ctx.moveTo(p1.x % ctx.canvas.width, p1.y % ctx.canvas.height);
         });
+        ctx.closePath();
+        ctx.stroke();
 
         handle = requestAnimationFrame(draw);
       };

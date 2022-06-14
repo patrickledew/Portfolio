@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className="App">
-      <DotsAndLinesBackground />
+      {/* <DotsAndLinesBackground /> */}
       <AnimatePresence exitBeforeEnter>
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} />
