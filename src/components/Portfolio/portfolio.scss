@@ -11,10 +11,23 @@
   padding-right: 10% !important;
   flex-direction: column;
   align-items: flex-start;
+
+  h1 {
+    margin-bottom: 0;
+  }
+
+  a {
+    color: $link-color-secondary;
+  }
+  a:hover {
+    color: darken($link-color-secondary, 10%);
+  }
+
+  .section-content {
+    padding: 0px 2em !important;
+  }
 }
 
 .project-container {
-  display: grid;
-  grid-template-columns: 3;
   width: 100%;
 }
