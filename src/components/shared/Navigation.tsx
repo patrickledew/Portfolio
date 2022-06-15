@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import ResumePDF from "../../res/resume.pdf";
 import "./navigation.scss";
 
 const Navigation: React.FC = () => {
@@ -38,9 +39,9 @@ const Navigation: React.FC = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink className="animated-link" to="/resume">
+            <a className="animated-link" href={ResumePDF} target="_blank">
               Resume
-            </NavLink>
+            </a>
           </li>
         </ul>
       </div>
