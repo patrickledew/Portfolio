@@ -66,7 +66,7 @@ const Portfolio: React.FC = () => {
             </ProjectInfo>
             <ProjectInfo thumbnail={SeisThumbnail} reversed>
               <h2>
-                <a href="https://seis-client.herokuapp.com/" target={"_blank"}>
+                <a href="https://seis-client.vercel.app/" target={"_blank"}>
                   Seis <i className="fa-solid fa-link"></i>
                 </a>
               </h2>
