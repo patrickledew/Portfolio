@@ -22,16 +22,15 @@ const AboutSection: React.FC = () => {
         <div className="about-text">
           <h1>About Me</h1>
           <p>
-            Hi! My name is Patrick, but most people call me Ricky. I'm a 19 year
-            old computer science student located in Jacksonville, FL, currently
+            Hi! My name is Patrick, but most people call me Ricky. I'm a
+            computer science student located in Jacksonville, FL, currently
             attending the University of North Florida.
           </p>
           <p>
             I've been interested in computers for as long as I can remember, and
-            I've been captivated by the puzzle-like quality of programming since
+            I've been captivated by the puzzle-like nature of programming since
             my early teens. I love making websites, games, experiments, and
-            everything in between. Now I'm looking to help solve puzzles in the
-            real world.
+            everything in between.
           </p>
           <p></p>
         </div>

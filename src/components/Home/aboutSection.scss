@@ -1,3 +1,11 @@
+.section.about {
+  background: linear-gradient(
+    to bottom right,
+    rgb(4, 105, 172),
+    rgb(7, 81, 124)
+  );
+}
+
 .section.about .section-content {
   display: flex;
   flex-wrap: nowrap;
