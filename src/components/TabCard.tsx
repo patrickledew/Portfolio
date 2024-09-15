@@ -1,4 +1,4 @@
-import { ReactNode, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
 import "./TabCard.scss";
 
 export interface Tab {
@@ -14,6 +14,13 @@ const TabCard = ({ tabs }: TabCardProps) => {
   const [tab, setTab] = useState(0);
 
   const tabWidthPercent = 100 / tabs.length;
+  const hash = window.location.hash;
+
+  useEffect(() => {
+    if (hash == "#blog") {
+      setTab(2);
+    }
+  }, [hash]);
 
   return (
     <div className="pane nopad">

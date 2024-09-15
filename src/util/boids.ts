@@ -46,7 +46,7 @@ const sketch = (p5: P5, container: Element, state: BoidsState) => {
     height = container.clientWidth;
 
     p5.createCanvas(width, height).parent(container);
-
+    p5.frameRate(60);
     scatterBoids();
   };
 
