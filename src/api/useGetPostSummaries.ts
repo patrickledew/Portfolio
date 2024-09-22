@@ -1,4 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
+import axios from "axios";
 
 interface PostSummary {
   title: string;
@@ -9,11 +10,11 @@ interface PostSummary {
 }
 
 const url =
-  "https://stbmxs6pk0.execute-api.us-east-1.amazonaws.com/default/portfolio-blog-api/list";
+  "list";
 
 const fn = async () => {
-  return fetch(url).then((res) => {
-    return res.json();
+  return axios.get(url).then((res) => {
+    return res.data;
   });
 };
 

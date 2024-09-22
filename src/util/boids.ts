@@ -58,7 +58,6 @@ const sketch = (p5: P5, container: Element, state: BoidsState) => {
     moveBoids();
 
     if (!p5.isLooping()) {
-      console.log("paused");
       p5.noLoop();
     } else {
       p5.loop();
@@ -66,13 +65,6 @@ const sketch = (p5: P5, container: Element, state: BoidsState) => {
   };
 
   p5.windowResized = () => {
-    console.log(`${width} ${height}`);
-    if (container) {
-      width = container.clientWidth * 2;
-      height = container.clientHeight * 2;
-    }
-    console.log(`${width} ${height}`);
-
     p5.resizeCanvas(width, height);
     p5.clear();
   };

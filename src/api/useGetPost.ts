@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-
+import axios from "axios";
 interface Post {
   title: string;
   slug: string;
@@ -8,12 +8,11 @@ interface Post {
   content: string;
 }
 
-const url =
-  "https://stbmxs6pk0.execute-api.us-east-1.amazonaws.com/default/portfolio-blog-api/post";
+const url = "post";
 
 const fn = async (slug: string) => {
-  return fetch(`${url}/${slug}`).then((res) => {
-    return res.json();
+  return axios.get(`${url}/${slug}`).then((res) => {
+    return res.data;
   });
 };
 

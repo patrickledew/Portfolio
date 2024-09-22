@@ -17,13 +17,9 @@ const BoidsComponent = ({ enabled }: { enabled: boolean }) => {
 
   useEffect(() => {
     if (!enabled) {
-      console.log("pausing");
-      console.log(P5Instance);
       P5Instance?.remove();
       setP5Instance(undefined);
-      console.log(P5Instance);
     } else {
-      console.log("resuming");
       P5Instance?.loop();
     }
   }, [enabled, P5Instance]);
