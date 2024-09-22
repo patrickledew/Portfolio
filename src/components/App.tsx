@@ -3,6 +3,8 @@ import { useState } from "react";
 import { FaFish } from "react-icons/fa";
 import BoidsComponent from "./BoidsComponent";
 import { Outlet } from "@tanstack/react-router";
+import "material-icons/iconfont/material-icons.css";
+
 const App = () => {
   const [boidsEnabled, setBoidsEnabled] = useState(true);
 

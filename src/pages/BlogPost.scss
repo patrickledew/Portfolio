@@ -20,22 +20,33 @@
     padding: 2em;
   }
 
+  .about-section {
+    font-weight: 300;
+
+    strong {
+      font-weight: 600;
+    }
+  }
+
   .back {
     display: block;
     position: sticky;
     top: 0;
-    width: min-content;
-    background-color: #222;
+    align-self: flex-start;
+    background-color: #0005;
     text-decoration: none;
     color: #eee !important;
-    box-shadow: 2px 0px 10px 0px #0004;
+    box-shadow: 0px 0px 10px 0px #0004;
     z-index: 5;
-    border-radius: 20px;
-    padding: 6px 10px;
+    border: 1px solid #0002;
+    border-radius: 5px;
+    max-width: 100%;
+    text-align: center;
+    padding: 10px 40px;
     margin: 1em;
 
     &:hover {
-      background-color: #333;
+      background-color: #0009;
     }
   }
 }

@@ -3,6 +3,7 @@ import { useGetPost } from "../api/useGetPost";
 import "./BlogPost.scss";
 import "../styles/util.scss";
 import Markdown from "react-markdown";
+import { LoadingIndicator } from "../components/LoadingIndicator";
 export const BlogPost = () => {
   const { slug } = useParams({ strict: false });
   const { data: post, isLoading } = useGetPost(slug ?? "");
@@ -12,17 +13,35 @@ export const BlogPost = () => {
         <Link to="/" hash="blog" className="back">
           Back
         </Link>
-        <div
-          className="post-image"
-          style={{
-            backgroundImage: `url('${post?.imageUrl}')`,
-          }}
-        ></div>
-        <div className="post-content">
-          <h1>{post?.title}</h1>
+        {isLoading ? (
+          <LoadingIndicator loadingText="Grabbing post" />
+        ) : (
+          <div>
+            <div
+              className="post-image"
+              style={{
+                backgroundImage: `url('${post?.imageUrl}')`,
+              }}
+            ></div>
 
-          <Markdown>{post?.content}</Markdown>
-        </div>
+            <div className="post-content">
+              <div className="about-section">
+                <div>
+                  Author: <strong>Patrick LeDew</strong>
+                </div>
+                <div>
+                  Published:{" "}
+                  <strong>
+                    {post ? new Date(post.date).toLocaleDateString() : ""}
+                  </strong>
+                </div>
+              </div>
+              <h1>{post?.title}</h1>
+
+              <Markdown>{post?.content}</Markdown>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

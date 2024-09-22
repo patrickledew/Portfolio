@@ -1,13 +1,15 @@
 import "./BlogTab.scss";
 import { useGetPostSummaries } from "../api/useGetPostSummaries";
+import { LoadingIndicator } from "./LoadingIndicator";
+import { Link } from "@tanstack/react-router";
 
 export const BlogTab = () => {
   const { data: posts, isLoading } = useGetPostSummaries();
 
   return (
-    <div className="blog-tab nopadtab" id="blog">
+    <div className="blog-tab nopadtab">
       {isLoading || !posts ? (
-        <div className="loading-indicator">Loading...</div>
+        <LoadingIndicator />
       ) : (
         posts.map((post) => (
           <div className="post-container">
@@ -24,7 +26,7 @@ export const BlogTab = () => {
             <div className="post-content">
               <h3>{post.title}</h3>
               <p>{post.spoilerText}</p>
-              <a href={`/blog/${post.slug}`}>View Post</a>
+              <Link to={`/blog/${post.slug}`}>View Post</Link>
             </div>
           </div>
         ))
