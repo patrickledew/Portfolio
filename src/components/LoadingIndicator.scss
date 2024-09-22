@@ -1,0 +1,38 @@
+.loading-indicator {
+  padding: 10em 0em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  .spinner {
+    display: block;
+    font-size: 100px;
+    animation: spin 1s linear infinite;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  .loading-text {
+    font-size: 1.2em;
+  }
+}
+
+@keyframes spin {
+  from {
+    rotate: 0deg;
+  }
+
+  25% {
+    rotate: 90deg;
+  }
+  50% {
+    rotate: 180deg;
+  }
+
+  75% {
+    rotate: 270deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}

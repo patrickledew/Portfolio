@@ -28,7 +28,7 @@ const sketch = (p5: P5, container: Element, state: BoidsState) => {
   let height = 1000;
   const NUM_BOIDS = 500;
 
-  const BOID_WIDTH = 10;
+  const BOID_WIDTH = 20;
   const BOID_LENGTH = 20;
 
   const SEP_DIST = 100;
@@ -46,19 +46,18 @@ const sketch = (p5: P5, container: Element, state: BoidsState) => {
     height = container.clientWidth;
 
     p5.createCanvas(width, height).parent(container);
-
+    p5.frameRate(60);
     scatterBoids();
   };
 
   p5.draw = () => {
-    p5.background(20, 20, 20, 20);
+    p5.background(10, 10, 10, 70);
 
     drawBoids(p5);
     thinkBoids(p5);
     moveBoids();
 
     if (!p5.isLooping()) {
-      console.log("paused");
       p5.noLoop();
     } else {
       p5.loop();
@@ -66,13 +65,6 @@ const sketch = (p5: P5, container: Element, state: BoidsState) => {
   };
 
   p5.windowResized = () => {
-    console.log(`${width} ${height}`);
-    if (container) {
-      width = container.clientWidth * 2;
-      height = container.clientHeight * 2;
-    }
-    console.log(`${width} ${height}`);
-
     p5.resizeCanvas(width, height);
     p5.clear();
   };
@@ -158,10 +150,19 @@ const sketch = (p5: P5, container: Element, state: BoidsState) => {
       p5.strokeWeight(0);
       p5.colorMode(p5.HSL, 255);
       const t = Date.now();
+
+      const base_hue = 190;
+      const hue_var = 20;
+      const hue_rate = 0.001;
+
+      const base_bright = 150;
+      const bright_var = 100;
+      const bright_rate = 0.002;
       p5.fill(
-        (b.id * 0.5 + t * 0.01) % 255,
-        200 + Math.sin(t * 0.001) * 30,
-        150 + Math.cos(t * 0.001) * 50
+        // (b.id * 0.5 + t * 0.01) % 255,
+        base_hue + Math.sin(t * hue_rate) * hue_var,
+        60,
+        base_bright + Math.cos(t * bright_rate + b.id) * bright_var
       );
       p5.colorMode(p5.RGB);
       const angle = Math.atan2(b.velX, b.velY);
