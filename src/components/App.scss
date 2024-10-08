@@ -1,8 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-* {
-  font-family: "DM Sans", monospace;
-}
 #canvas {
   z-index: 0;
   position: fixed;
@@ -38,6 +33,13 @@ body {
   background-color: #181818;
 }
 
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100dvh;
+}
+
 #page-container {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
@@ -45,7 +47,6 @@ body {
 
 #content {
   margin-top: 5em;
-  margin-bottom: 3em;
   grid-column: 2 / 3;
   z-index: 10;
   display: flex;
@@ -88,40 +89,6 @@ body {
   }
 }
 
-@media screen and (max-width: 1050px) {
-  * {
-    // font-size: 1.2rem;
-  }
-  #content {
-    margin: 0;
-    min-height: 100vh;
-    grid-column: 1/4;
-  }
-  .pane:last-child {
-    flex: 1;
-  }
-}
-
-.pane-light {
-  background-color: rgba(194, 208, 255, 0.8);
-  color: #333;
-  a {
-    color: #222;
-
-    &:hover,
-    &:active {
-      color: #111;
-    }
-  }
-}
-
-.display {
-  font-family: "Staatliches", sans-serif;
-  align-self: center;
-  font-weight: 600;
-  font-size: 4em;
-}
-
 p {
   margin-bottom: 0.5em;
   margin-top: 0;
@@ -138,4 +105,29 @@ h3 {
 h4 {
   font-size: 0.9em;
   margin-bottom: 0.2em;
+}
+
+.pane-light {
+  background-color: rgba(194, 208, 255, 0.8);
+  color: #333;
+  a {
+    color: #222;
+
+    &:hover,
+    &:active {
+      color: #111;
+    }
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  * {
+    font-size: 1.0rem;
+  }
+  #content {
+    padding: 0px;
+    margin: 0;
+    grid-column: 1/4;
+    gap: 0;
+  }
 }

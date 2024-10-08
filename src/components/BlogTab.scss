@@ -75,3 +75,9 @@
     padding: 2em;
   }
 }
+
+@media screen and (max-width: 1050px) {
+  .post-container {
+    margin-top: 10px;
+  }
+}

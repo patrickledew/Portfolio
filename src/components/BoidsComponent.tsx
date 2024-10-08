@@ -7,21 +7,30 @@ const BoidsComponent = ({ enabled }: { enabled: boolean }) => {
   const sketchRef = useRef<HTMLDivElement>(null);
   const [P5Instance, setP5Instance] = useState<p5>();
 
-  useEffect(() => {
+
+  // setup handler for screen size change
+  const setupSketch = () => {
     if (sketchRef.current && enabled && !P5Instance) {
       const sketch = makeSketch(sketchRef.current);
       const p = new p5(sketch);
       setP5Instance(p);
     }
-  }, [P5Instance, enabled]);
+  }
+
+  useEffect(() => {
+    if (!P5Instance) {
+      setupSketch();
+    }
+  }, []);
 
   useEffect(() => {
     if (!enabled) {
       P5Instance?.remove();
       setP5Instance(undefined);
     } else {
-      P5Instance?.loop();
+      setupSketch();
     }
+
   }, [enabled, P5Instance]);
 
   return enabled && <div id="canvas" ref={sketchRef}></div>;
