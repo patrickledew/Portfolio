@@ -2,6 +2,7 @@ import "./BlogTab.scss";
 import { useGetPostSummaries } from "../api/useGetPostSummaries";
 import { LoadingIndicator } from "./LoadingIndicator";
 import { Link } from "@tanstack/react-router";
+import Markdown from "react-markdown";
 
 export const BlogTab = () => {
   const { data: posts, isLoading } = useGetPostSummaries();
@@ -25,7 +26,7 @@ export const BlogTab = () => {
             ></div>
             <div className="post-content">
               <h3>{post.title}</h3>
-              <p>{post.spoilerText}</p>
+              <p><Markdown>{post.spoilerText}</Markdown></p>
               <Link to={`/blog/${post.slug}`}>View Post</Link>
             </div>
           </div>
