@@ -50,10 +50,20 @@ const AboutMeTab = () => (
   <div className="about-me-tab">
     <h3>About Me</h3>
     <p>
-      Hi, I'm Ricky LeDew, a passionate software developer with a knack for
-      turning ideas into reality through code. With around two years of
+      Hi, I'm Patrick "Ricky" LeDew, a passionate software developer with a knack for
+      turning ideas into reality through code. With over two years of
       professional experience, I've transitioned from an intern doing frontend
       development with React to a full-stack C# developer.
+    </p>
+    <p>
+      I'm always interested in learning new languages or frameworks, and
+      have experience in TypeScript, React, C#, Blazor, Python, and Go. I also
+      enjoy my other hobbies, which include playing piano and guitar, film
+      photography, and video games.
+    </p>
+    <p>
+      If you want to get in touch, you can do so via my	<a href="https://www.linkedin.com/in/patrickledew" target="_blank">LinkedIn</a> or 
+      by email at <a href="mailto:patrickledew@gmail.com">patrickledew@gmail.com</a>.
     </p>
   </div>
 );

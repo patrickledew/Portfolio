@@ -74,6 +74,8 @@ body {
 .pane {
   background-color: #252529;
   padding: 2em 3em;
+  border-radius: 10px;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   backdrop-filter: blur(5px);
