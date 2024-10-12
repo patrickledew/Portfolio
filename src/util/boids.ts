@@ -47,10 +47,11 @@ const opts: BoidsOptions = {
   ALIGN_STRENGTH:  5,
   MOUSE_DIST:  500,
   MOUSE_STRENGTH:  0.5,
-  SPEED:  3,
+  SPEED:  4,
 }
 export default (container: Element): ((p5: P5) => void) => {
   container = container;
+  console.log(`Creating sketch. Boids count: ${state.boids.length}`);
   return (p5: P5) => {
     sketch(p5, container);
   }
@@ -71,9 +72,9 @@ const sketch = (p5: P5, container: Element) => {
   p5.draw = () => {
     p5.background(10, 10, 10, 70);
 
-    drawBoids(p5);
     thinkBoids(p5);
     moveBoids();
+    drawBoids(p5);
 
     if (!p5.isLooping()) {
       p5.noLoop();
@@ -214,6 +215,7 @@ const sketch = (p5: P5, container: Element) => {
     state.boids.push(boid);
   };
   const scatterBoids = () => {
+    state.boids = []
     for (let i = 0; i < opts.NUM_BOIDS; i++) {
       createRandomlyPlacedBoid(i);
     }
