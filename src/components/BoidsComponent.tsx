@@ -1,5 +1,5 @@
 import p5 from "p5";
-import { Ref, RefObject, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import makeSketch from "../util/boids";
 
